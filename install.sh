@@ -6,12 +6,12 @@ systemctl stop renews.service || true
 # install the renews binary from github releases
 mkdir -p /home/root/bin
 cd /home/root/bin
-wget -O release.zip https://github.com/kashortiexda/remarkable_news/releases/download/v1.0.0/release.zip
+wget -O release.zip https://kashortiexda.github.io/remarkable_news/releases/download/v1.0.0/release.zip
 unzip -o release.zip
 
 # install systemd service
 # mv renews.service ${SERVICE}
-wget -O ${SERVICE} "https://github.com/kashortiexda/remarkable_news/tree/master/services/${1}.service"
+wget -O ${SERVICE} "https://kashortiexda.github.io/remarkable_news/services/${1}.service"
 
 # substitute COOLDOWN and KEYWORDS arguments
 if [[ -z $COOLDOWN ]]
