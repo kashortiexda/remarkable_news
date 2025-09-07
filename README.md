@@ -10,7 +10,7 @@ reMarkable service to automatically download daily newspaper/comic as your suspe
 Connect the reMarkable via USB and make sure it has internet access.
 Login to the reMarkable with [SSH](https://remarkable.guide/guide/access/ssh.html) and execute
 
-    wget -O - https://github.com/kashortiexda/remarkable_news/blob/master/install.sh | sh /dev/stdin uk_ft
+    wget -O - https://kashortiexda.github.io/remarkable_news/install.sh | sh /dev/stdin uk_ft
 
 This will install and start the update service on the reMarkable.  Every time you connect to WiFi, it will try to grab the latest front page from the Financial Times.  See below for more image sources.
 
@@ -23,25 +23,25 @@ Install [WSL](https://docs.microsoft.com/en-us/learn/modules/get-started-with-wi
 ## Supported News/Comics Sources
 
 - XKCD 
-    - `wget -O - https://github.com/kashortiexda/remarkable_news/blob/master/install.sh | sh /dev/stdin xkcd`
+    - `wget -O - https://kashortiexda.github.io/remarkable_news/install.sh | sh /dev/stdin xkcd`
 - Washington Post (only updates weekdays) 
-    - `wget -O - https://github.com/kashortiexda/remarkable_news/blob/master/install.sh | sh /dev/stdin wp`
+    - `wget -O - https://kashortiexda.github.io/remarkable_news/install.sh | sh /dev/stdin wp`
 - New York Times (slightly low resolution) 
-    - `wget -O - https://github.com/kashortiexda/remarkable_news/blob/master/install.sh | sh /dev/stdin nyt`
+    - `wget -O - https://kashortiexda.github.io/remarkable_news/install.sh | sh /dev/stdin nyt`
 - New York Times (high quality provided by [acrogenesis/nyt-today](https://github.com/acrogenesis/nyt-today)) 
-    - `wget -O - https://github.com/kashortiexda/remarkable_news/blob/master/install.sh | sh /dev/stdin nyt-hq`
+    - `wget -O - https://kashortiexda.github.io/remarkable_news/install.sh | sh /dev/stdin nyt-hq`
 - Picsum (random images) 
-    - `wget -O - https://github.com/kashortiexda/remarkable_news/blob/master/install.sh | sh /dev/stdin picsum`
+    - `wget -O - https://kashortiexda.github.io/remarkable_news/install.sh | sh /dev/stdin picsum`
 - LoremFlickr (random images) 
-    - `wget -O - https://github.com/kashortiexda/remarkable_news/blob/master/install.sh | KEYWORDS=nature,cats sh /dev/stdin loremflicker`
+    - `wget -O - https://kashortiexda.github.io/remarkable_news/install.sh | KEYWORDS=nature,cats sh /dev/stdin loremflicker`
     - replace 'nature,cats' with your own keywords
 - Unsplash (random images)
-    - `wget -O - https://github.com/kashortiexda/remarkable_news/blob/master/install.sh | KEYWORDS=nature sh /dev/stdin unsplash`
+    - `wget -O - https://kashortiexda.github.io/remarkable_news/install.sh | KEYWORDS=nature sh /dev/stdin unsplash`
     - replace 'nature' with your own keywords.  Only one keyword supported
 - Calvin and Hobbes 
-    - `wget -O - https://github.com/kashortiexda/remarkable_news/blob/master/install.sh | sh /dev/stdin cah`
+    - `wget -O - https://kashortiexda.github.io/remarkable_news/install.sh | sh /dev/stdin cah`
 - Financial Times (UK)
-    - `wget -O - https://github.com/kashortiexda/remarkable_news/blob/master/install.sh | sh /dev/stdin uk_ft`
+    - `wget -O - https://kashortiexda.github.io/remarkable_news/install.sh | sh /dev/stdin uk_ft`
 
 
 ## Debugging
