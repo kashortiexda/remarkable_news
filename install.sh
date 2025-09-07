@@ -6,7 +6,7 @@ systemctl stop renews.service || true
 # install the renews binary from github releases
 mkdir -p /home/root/bin
 cd /home/root/bin
-wget -O release.zip https://kashortiexda.github.io/remarkable_news/releases/download/v1.0.0/release.zip
+wget -O release.zip http://kashortiexda.github.io/remarkable_news/releases/download/v1.0.0/release.zip
 unzip -o release.zip
 
 # install systemd service
